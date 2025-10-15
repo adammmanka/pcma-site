@@ -6,6 +6,7 @@ import { Inclusion } from "@/components/sections/inclusion";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Partners } from "@/components/sections/partners";
 import { CtaBanner } from "@/components/sections/cta-banner";
+import { FeaturedCarousel } from "@/components/sections/featured-carousel";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <StatsBar />
       <Benefits />
+      <FeaturedCarousel />
       <Services />
       <Inclusion />
       <Testimonials />
