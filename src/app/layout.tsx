@@ -34,6 +34,9 @@ export default function RootLayout({
             <div className="flex gap-6 text-sm" style={{ color: "var(--muted)" }}>
               <Link href="/about">About</Link>
               <Link href="/services">Services</Link>
+              <Link href="/platforms">Platforms</Link>
+              <Link href="/payment-processing">Payment Processing</Link>
+              <Link href="/faqs">FAQs</Link>
               <Link href="/membership">Membership</Link>
               <Link href="/contact" className="text-white">Contact</Link>
             </div>
