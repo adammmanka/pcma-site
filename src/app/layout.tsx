@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -18,6 +19,9 @@ export const metadata: Metadata = {
   description:
     "Private banking side of merchant services: unlimited processing, transparent pricing, enterprise tools.",
   metadataBase: new URL("https://example.com"),
+  icons: {
+    icon: "/favicon.webp",
+  },
 };
 
 export default function RootLayout({
@@ -30,7 +34,10 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-dvh`}>
         <header className="sticky top-0 z-50 bg-[var(--bg)]/80 backdrop-blur">
           <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-            <Link href="/" className="font-semibold tracking-wide">PCMA</Link>
+            <Link href="/" className="font-semibold tracking-wide flex items-center gap-2">
+              <Image src="/favicon.webp" alt="" width={20} height={20} className="rounded" />
+              <span>PCMA</span>
+            </Link>
             <div className="flex gap-6 text-sm" style={{ color: "var(--muted)" }}>
               <Link href="/about">About</Link>
               <Link href="/services">Services</Link>
