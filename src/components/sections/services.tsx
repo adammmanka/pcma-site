@@ -7,12 +7,12 @@ const services = [
 
 export function Services() {
   return (
-    <section className="section section-muted">
+    <section className="section">
       <div className="mx-auto max-w-6xl px-4">
         <h2 className="text-2xl md:text-3xl font-semibold">Services</h2>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           {services.map((s) => (
-            <article key={s.title} className="overflow-hidden rounded-xl2 border" style={{ borderColor: "rgba(255,255,255,0.1)" }}>
+            <article key={s.title} className="overflow-hidden tile">
               <div className="h-48 w-full bg-center bg-cover" style={{ backgroundImage: `url(${s.img})` }} />
               <div className="p-6">
                 <h3 className="text-xl font-medium">{s.title}</h3>

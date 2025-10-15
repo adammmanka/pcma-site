@@ -17,19 +17,19 @@ export function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-5xl font-semibold leading-tight"
+          className="text-[32px] md:text-[54px] font-semibold leading-[1.05] tracking-[-0.02em]"
         >
           Payments — Perfected
         </motion.h1>
-        <p className="mt-4 max-w-2xl" style={{ color: "var(--muted)" }}>
+        <p className="mt-4 max-w-xl text-lg md:text-xl" style={{ color: "var(--muted)" }}>
           To ensure the growth of your business, we are committed to providing
           the highest quality of electronic transaction services found in the industry.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
-          <a href="/membership" className="rounded-xl2 px-5 py-3 bg-[var(--accent)] text-white shadow-soft">
+          <a href="/membership" className="btn btn-primary shadow-soft">
             Join PCMA
           </a>
-          <a href="/contact" className="rounded-xl2 px-5 py-3 border" style={{ borderColor: "rgba(255,255,255,0.2)" }}>
+          <a href="/contact" className="btn btn-secondary">
             Schedule a Consultation
           </a>
         </div>
