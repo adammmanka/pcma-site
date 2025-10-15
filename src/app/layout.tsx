@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Image from "next/image";
+import { Header } from "@/components/site/header";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -32,23 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-dvh`}>
-        <header className="sticky top-0 z-50 bg-[var(--bg)]/80 backdrop-blur">
-          <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-            <Link href="/" className="font-semibold tracking-wide flex items-center gap-2">
-              <Image src="/favicon.webp" alt="" width={20} height={20} className="rounded" />
-              <span>PCMA</span>
-            </Link>
-            <div className="flex gap-6 text-sm" style={{ color: "var(--muted)" }}>
-              <Link href="/about">About</Link>
-              <Link href="/services">Services</Link>
-              <Link href="/platforms">Platforms</Link>
-              <Link href="/payment-processing">Payment Processing</Link>
-              <Link href="/faqs">FAQs</Link>
-              <Link href="/membership">Membership</Link>
-              <Link href="/contact" className="text-white">Contact</Link>
-            </div>
-          </nav>
-        </header>
+        <Header />
         <main>{children}</main>
         <footer className="border-t" style={{ borderColor: "rgba(255,255,255,0.1)" }}>
           <div className="mx-auto max-w-6xl px-4 py-14 text-sm" style={{ color: "var(--muted)" }}>
